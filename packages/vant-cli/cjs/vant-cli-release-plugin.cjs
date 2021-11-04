@@ -6,8 +6,8 @@ class VantCliReleasePlugin extends releaseIt.Plugin {
     // log an empty line
     console.log('');
 
-    execSync('vant-cli build');
-    execSync('vant-cli changelog');
+    execSync('vant-cli build', { stdio: 'inherit' });
+    execSync('vant-cli changelog', { stdio: 'inherit' });
   }
 }
 
